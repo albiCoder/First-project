@@ -1,0 +1,281 @@
+
+body{
+	background-position: center;
+	background-image:linear-gradient(rgba(255,255,255,0.55),rgba(255,255,255,0.55)) , url("may18-23.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: cursive;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#logo{
+	position:absolute;
+	top:15px;
+	left:30px;
+	float:left;
+}
+
+#logo:active{
+  transform: translateY(4px);
+}
+
+nav{
+	width:100%;
+	height:100px;
+  	overflow: auto;
+	font-family: cursive;
+	font-size: 1.4em;
+	background-color: rgba(210, 105, 30, 1);
+}
+
+nav li{
+	height: 50px;
+}
+
+nav li a{
+	padding: 5px 10px;
+	color: white;
+	position: relative;
+	top: 10px;
+	margin-left: 5px;
+	text-align: center;
+	font-weight: bolder;
+	text-decoration: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+nav li a:hover{
+	color: black;
+}
+
+
+nav ul{
+	margin-left: 150px;
+}
+
+nav ul li{
+	float:left;
+	list-style: none;
+	display: inline-block;
+
+}
+
+.subnav{
+	line-height: 5px;
+	height:auto;
+	background-color: rgba(255, 0, 0, 0.9);
+	font-family: cursive;
+	font-size: 1.2em;
+	margin-top: 3px;
+	margin-left:30%;
+	color: white;
+	font-weight: bolder;
+	padding-left: 15px;
+	font-style: italic;
+}
+
+.subnav p{
+	float: right;
+	margin-right:20px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+form.searchForm{
+	position: absolute;
+	margin-top:100px;
+	border-radius: 4px;
+}
+
+form.searchForm input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 10px 0px 0px 10px;
+}
+
+form.searchForm button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0px 10px 10px 0px;
+}
+
+form.searchForm button:hover {
+  background: #0b7dda;
+}
+
+form.searchForm::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.container{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.card{
+	display: grid;
+	grid-template-columns: 220px;
+	grid-template-rows: 300px 60px;
+	grid-template-areas: "image" "text";
+	border-radius: 20px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+	text-align: center;
+	margin-left: 10px;
+	font-weight: bolder;
+	font-size: 1.2em;
+	color: white;
+	overflow: hidden;
+	transition: 0.5s ease;
+	cursor: pointer;
+	background: rgba(0, 0, 0, 1);
+	position: relative;
+	margin: 10px;
+}
+
+.card:hover{
+	filter: brightness(110%);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+	transform: scale(0.95);
+	
+}
+
+.cardImage{
+	grid-area: image;
+	border-radius: 15px 15px 0px 0px;
+	
+}
+
+.card .cardImage img{
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: contain;
+  }
+
+.card .cardText1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    transition: 0.5s Easy;
+    z-index: 1;
+}
+ 
+.card:active .cardText1{
+    transform: translateY(-30px);
+    overflow: hidden;
+}
+
+.card .cardText2{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	transition: 0.5s Easy;
+	 z-index: 1;
+}
+ 
+.card:active .cardText2{
+    transform: translateY(-30px);
+    overflow: hidden;		
+}
+
+.card .cardText3{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  transition: 0.5s Easy;
+  z-index: 1;
+}
+ 
+.card:active .cardText3{
+    transform: translateY(-30px);
+    overflow: hidden;
+}
+
+.card .cardText4{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  transition: 0.5s Easy;
+  z-index: 1;
+}
+ 
+.card:active .cardText4{
+    transform: translateY(-30px);
+    overflow: hidden;
+}
+
+.card .cardText5{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  transition: 0.5s Easy;
+  z-index: 1;
+}
+ 
+.card:active .cardText5{
+    transform: translateY(-30px);
+    overflow: hidden;
+}
+
+.cardText1{
+	grid-area: text;
+	border-radius: 0px 0px 18px 18px;
+	background-color: #7FDBFF;
+}
+
+.cardText2{
+	grid-area: text;
+	border-radius: 0px 0px 18px 18px;
+	background-color: #01FF70;
+}
+
+.cardText3{
+	grid-area: text;
+	border-radius: 0px 0px 18px 18px;
+	background-color: #FFDC00;
+}
+
+.cardText4{
+	grid-area: text;
+	border-radius: 0px 0px 18px 18px;
+	background-color: #FF4136;
+}
+
+.cardText5{
+	grid-area: text;
+	border-radius: 0px 0px 18px 18px;
+	background-color: #F012BE;
+}

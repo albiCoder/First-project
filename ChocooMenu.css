@@ -1,0 +1,720 @@
+
+body{
+	background-position: center;
+	background-image:linear-gradient(rgba(255,255,255,0.55),rgba(255,255,255,0.55)) , url("may18-23.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: cursive;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#logo{
+	position:absolute;
+	top:15px;
+	left:30px;
+	float:left;
+}
+
+#logo:active{
+  transform: translateY(4px);
+}
+
+nav{
+	width:100%;
+	height:100px;
+  	overflow: auto;
+	font-family: cursive;
+	font-size: 1.4em;
+	background-color: rgba(210, 105, 30, 1);
+}
+
+nav li{
+	height: 50px;
+}
+
+nav li a{
+	padding: 5px 10px;
+	color: white;
+	position: relative;
+	top: 10px;
+	margin-left: 5px;
+	text-align: center;
+	font-weight: bolder;
+	text-decoration: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+nav li a:hover{
+	color: black;
+}
+
+
+nav ul{
+	margin-left: 150px;
+}
+
+nav ul li{
+	float:left;
+	list-style: none;
+	display: inline-block;
+
+}
+
+.subnav{
+	line-height: 5px;
+	height:auto;
+	background-color: rgba(255, 0, 0, 0.9);
+	font-family: cursive;
+	font-size: 1.2em;
+	margin-top: 3px;
+	margin-left:30%;
+	color: white;
+	font-weight: bolder;
+	padding-left: 15px;
+	font-style: italic;
+}
+
+.subnav p{
+	float: right;
+	margin-right:20px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+form.searchForm{
+	position: absolute;
+	margin-top:100px;
+	border-radius: 4px;
+}
+
+form.searchForm input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 10px 0px 0px 10px;
+}
+
+form.searchForm button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0px 10px 10px 0px;
+}
+
+form.searchForm button:hover {
+  background: #0b7dda;
+}
+
+form.searchForm::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.container{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+.card{
+	display: grid;
+	grid-template-columns: 250px;
+	grid-template-rows: 270px 60px;
+	grid-template-areas: "image" "text";
+	border-radius: 20px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+	text-align: center;
+	margin-left: 10px;
+	font-weight: bolder;
+	font-size: 1.2em;
+	color: white;
+	overflow: hidden;
+	transition: 0.5s ease;
+	cursor: pointer;
+	background: rgba(0, 0, 0, 1);
+	position: relative;
+}
+
+.card:hover{
+	filter: brightness(110%);
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+	transform: scale(0.95);
+}
+
+.card .cardText1{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  transition: 0.5s Easy;
+  z-index: 1;
+}
+ 
+.card:active .cardText1{
+    transform: translateY(-30px);
+}
+
+.card .cardText2{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  transition: 0.5s Easy;
+  z-index: 1;
+}
+ 
+.card:active .cardText2{
+    transform: translateY(-30px);
+}
+
+.card .cardText3{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  transition: 0.5s Easy;
+  z-index: 1;
+}
+ 
+.card:active .cardText3{
+    transform: translateY(-30px);
+}
+
+.card .cardText4{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  transition: 0.5s Easy;
+  z-index: 1;
+}
+ 
+.card:active .cardText4{
+    transform: translateY(-30px);
+}
+
+.card .cardText5{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  transition: 0.5s Easy;
+  z-index: 1;
+}
+ 
+.card:active .cardText5{
+    transform: translateY(-30px);
+}
+
+.cardText1{
+	grid-area: text;
+	border-radius: 0px 0px 18px 18px;
+	background-color: #7FDBFF;
+}
+
+.cardText2{
+	grid-area: text;
+	border-radius: 0px 0px 18px 18px;
+	background-color: #01FF70;
+}
+
+.cardText3{
+	grid-area: text;
+	border-radius: 0px 0px 18px 18px;
+	background-color: #FFDC00;
+}
+
+.cardText4{
+	grid-area: text;
+	border-radius: 0px 0px 18px 18px;
+	background-color: #FF4136;
+}
+
+.cardText5{
+	grid-area: text;
+	border-radius: 0px 0px 18px 18px;
+	background-color: #F012BE;
+}
+
+/*
+.cardImage1{
+	grid-area: image;
+	background: url("desserts images/No Bake Banana Split Dessert Recipe.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+*/
+.cardImage2{
+	grid-area: image;
+	background: url("desserts images/Banana Pudding Parfaits.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage3{
+	grid-area: image;
+	background: url("desserts images/Andi and Derek's Wedding in Portsmouth, New Hampshire.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage4{
+	grid-area: image;
+	background: url("desserts images/Easy Cannoli Cake _ Nibble and Dine _ Only 6 Ingredients!.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage5{
+	grid-area: image;
+	background: url("desserts images/Best Flourless Chocolate Cake.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage11{
+	grid-area: image;
+	background: url("desserts images/Banana Bread Cheesecake.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage12{
+	grid-area: image;
+	background: url("desserts images/Bienenstich-Dessert.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage13{
+	grid-area: image;
+	background: url("desserts images/Blackberry Wine Hand Pies.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage14{
+	grid-area: image;
+	background: url("desserts images/Boozy Cherry Bomb Brownies.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+.cardImage15{
+	grid-area: image;
+	background: url("desserts images/Champagne Chantilly Shooters.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage21{
+	grid-area: image;
+	background: url("desserts images/Champagne-Glazed Fruit Tarts.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage22{
+	grid-area: image;
+	background: url("desserts images/Cheesecake Cones.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage23{
+	grid-area: image;
+	background: url("desserts images/Cheesecake sans Cuisson Citron Menthe Framboise.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage24{
+	grid-area: image;
+	background: url("desserts images/CHOCOLATE PEANUT BUTTER LASAGNA1.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage25{
+	grid-area: image;
+	background: url("desserts images/Chocolate Spoonful Cake.png");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage31{
+	grid-area: image;
+	background: url("desserts images/Chocolate-Caramel Kettle Chips.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+
+.cardImage32{
+	grid-area: image;
+	background: url("desserts images/Dark Chocolate Stout Mini Pie.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage33{
+	grid-area: image;
+	background: url("desserts images/No Bake Strawberry Cheesecake using REAL Strawberries.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage34{
+	grid-area: image;
+	background: url("desserts images/Easy Cannoli Cake _ Nibble and Dine _ Only 6 Ingredients!.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage35{
+	grid-area: image;
+	background: url("desserts images/Easy Chocolate Dump Cake (5 ingredients).jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage41{
+	grid-area: image;
+	background: url("desserts images/Easy S'Mores Brownies Recipe for Summer - Passion For Savings.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage42{
+	grid-area: image;
+	background: url("desserts images/Edible Flowers.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage43{
+	grid-area: image;
+	background: url("desserts images/Erdbeer-Dessert im Glas mit Butterkeksen _ Die besten Backrezepte mit Gelinggarantie.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage44{
+	grid-area: image;
+	background: url("desserts images/Fancy Dipped Strawberries.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage45{
+	grid-area: image;
+	background: url("desserts images/French Silk Pie Cake (Copycat Deep'n Delicious Chocolate Cake).jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage51{
+	grid-area: image;
+	background: url("desserts images/Fudgy Cookies and Cream Brownies Recipe _ Easy Oreo Brownies.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage52{
+	grid-area: image;
+	background: url("desserts images/Gooey Chocolate Chip Pumpkin Bars.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage53{
+	grid-area: image;
+	background: url("desserts images/Rasberry Mousse-Filled Chocolate Cookies Shots.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage54{
+	grid-area: image;
+	background: url("desserts images/Ice Cube Tray Chocolates.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage55{
+	grid-area: image;
+	background: url("desserts images/Lemon Blueberry Cheesecake Cake.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage61{
+	grid-area: image;
+	background: url("desserts images/Mein schwedischer Lieblingsnachtisch, Zimtcreme mit Blaubeeren.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage62{
+	grid-area: image;
+	background: url("desserts images/Neapolitan Bonbon Cupcakes.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage63{
+	grid-area: image;
+	background: url("desserts images/New Chocolate Desserts Fine Dining Cakes Ideas.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage64{
+	grid-area: image;
+	background: url("desserts images/Paula Deens Banana Pudding.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage65{
+	grid-area: image;
+	background: url("desserts images/Peanut Butter Chocolate Chip Cookie Cake.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage71{
+	grid-area: image;
+	background: url("desserts images/Peanut Butter White Chocolate Cookies.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage72{
+	grid-area: image;
+	background: url("desserts images/Pecan Pie Bars.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage73{
+	grid-area: image;
+	background: url("desserts images/Pecan Pie Pumpkin Cheesecake.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage74{
+	grid-area: image;
+	background: url("desserts images/Pina Colada Tartlets.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage75{
+	grid-area: image;
+	background: url("desserts images/Pink Champagne Truffles.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage81{
+	grid-area: image;
+	background: url("desserts images/Pink Coconut Snowball Cakelettes.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage82{
+	grid-area: image;
+	background: url("desserts images/Poured Fondant Honey Cupcakes With Chocolate Wax Seals.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage83{
+	grid-area: image;
+	background: url("desserts images/Reese's Fluffernutter Bars.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage84{
+	grid-area: image;
+	background: url("desserts images/Rose Wine Toasting Cakes.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage85{
+	grid-area: image;
+	background: url("desserts images/Salted Caramel Chocolate Cake - Baker by Nature.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage91{
+	grid-area: image;
+	background: url("desserts images/Spring Flower Lollipops.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage92{
+	grid-area: image;
+	background: url("desserts images/Sprinkled Strawberry Whoopie Pies.jpeg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage93{
+	grid-area: image;
+	background: url("desserts images/Strawberry Lemon Blondies.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage94{
+	grid-area: image;
+	background: url("desserts images/No-Bake Chocolate Cream Pie - Baker by Nature.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage95{
+	grid-area: image;
+	background: url("desserts images/This Cookie Dough Trifle Uses A Brilliant Hack To Make Eggless Cookie Dough.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage100{
+	grid-area: image;
+	background: url("desserts images/White Chocolate Raspberry Cheesecake.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage101{
+	grid-area: image;
+	background: url("desserts images/White Cake.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage102{
+	grid-area: image;
+	background: url("desserts images/White Chocolate Banana Pudding.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage103{
+	grid-area: image;
+	background: url("desserts images/White Chocolate Caramel Pecan Fudge.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+
+.cardImage104{
+	grid-area: image;
+	background: url("desserts images/White Chocolate Cranberry Fudge Recipe _ Easy Christmas Idea.png");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+
+.cardImage105{
+	grid-area: image;
+	background: url("desserts images/White Chocolate Orange Creamsicle Truffles.png");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+
+.cardImage106{
+	grid-area: image;
+	background: url("desserts images/White Chocolate Peanut Butter Balls.png");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage107{
+	grid-area: image;
+	background: url("desserts images/oreo truffies.png");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+
+.cardImage108{
+	grid-area: image;
+	background: url("desserts images/No-Bake Cherry Yum Yum.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage109{
+	grid-area: image;
+	background: url("desserts images/White Chocolate Raspberry Poke Cake.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage110{
+	grid-area: image;
+	background: url("desserts images/BEST Pumpkin Delight Dessert Recipe (+VIDEO) _ Lil' Luna.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage111{
+	grid-area: image;
+	background: url("desserts images/Chocolate Covered Strawberry Brownies.png");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage112{
+	grid-area: image;
+	background: url("desserts images/Coca-Cola Cupcakes.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage113{
+	grid-area: image;
+	background: url("desserts images/Cranberry Pie.png");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}
+
+.cardImage114{
+	grid-area: image;
+	background: url("desserts images/Golden, Chocolate-Dipped Marshmallows.jpg");
+	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+}

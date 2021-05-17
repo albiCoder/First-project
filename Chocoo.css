@@ -1,0 +1,239 @@
+body{
+	background-position: center;
+	background-image: linear-gradient(rgba(255,255,255,0.55),rgba(255,255,255,0.55)) , url("872265.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: cursive;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#logo{
+	position: absolute;
+	top:15px;
+	left:30px;
+	float:left;
+}
+
+#logo:active{
+  transform: translateY(4px);
+}
+
+nav{
+	width: 100%;
+	height: 100px;
+  	overflow: auto;
+	font-family: cursive;
+	font-size: 1.4em;
+	background-color: rgba(210, 105, 30, 1);
+}
+
+nav li{
+	height: 50px;
+}
+
+nav li a{
+	padding: 5px 10px;
+	color: white;
+	position: relative;
+	top: 10px;
+	margin-left: 5px;
+	text-align: center;
+	font-weight: bolder;
+	text-decoration: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+nav li a:hover{
+	color: black;
+}
+
+
+nav ul{
+	margin-left: 150px;
+}
+
+nav ul li{
+	float:left;
+	list-style: none;
+	display: inline-block;
+
+}
+
+.subnav{
+	line-height: 5px;
+	height:auto;
+	background-color: rgba(255, 0, 0, 0.9);
+	font-family: cursive;
+	font-size: 1.2em;
+	margin-top: 3px;
+	margin-left:21.5%;
+	color: white;
+	padding-left: 15px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.subnav p{
+	float: right;
+	margin-right:20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.searchForm{
+	position: absolute;
+	margin-top:100px;
+	border-radius: 4px;
+}
+
+form.searchForm input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 10px 0px 0px 10px;
+}
+
+form.searchForm button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0px 10px 10px 0px;
+}
+
+form.searchForm button:hover {
+  background: #0b7dda;
+}
+
+form.searchForm::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.miresevini{
+	margin: 18%;
+	
+	border: 4px red dashed;
+	padding: 40px;
+	border-radius: 30px;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.3);
+	color: brown;
+}
+
+.miresevini h3{
+	font-style: italic;
+
+}
+
+.Footer{
+	border: 4px red dashed;
+	background: rgba(255, 255, 255, 0.3);
+	padding: 20px;
+    border-radius: 30px;
+    padding-left: 100px;
+    padding-right: 100px; 
+}
+
+.Footer img{
+	border-radius: 10px;
+	width: 250px;
+}
+
+footer{
+	text-align: center;
+	color: brown;
+	font-size: 1.1em;
+	margin:auto;
+}
+
+.name{
+	color: #0080ff;
+	font-size: 2em; 
+	font-weight: bolder;
+}
+
+.subname{
+	font-style: italic;
+	color: black;
+}
+
+
+.mySlides{/*kur e heq nuk ben ndonje ndryshim por po e le pernjehere*/
+    display: none;
+}
+
+img{
+    vertical-align: middle;
+    background-attachment: contain;
+}
+
+/* Slideshow container */
+.slideshow-container { 
+    width: 250px;
+    height: 250px;
+  	
+    position: absolute;
+    margin-left: 40%;
+}
+
+
+/* Caption text */
+.text {
+    color: #000;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
